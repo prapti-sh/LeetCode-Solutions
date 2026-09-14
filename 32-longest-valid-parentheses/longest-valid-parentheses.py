@@ -10,13 +10,10 @@ class Solution(object):
         for i in range(len(s)):
             print(i)
             if s[i] == "(":
-                print("Stack add")
                 stack.append(i)
             else:
                 stack.pop()
-                print("Stack pop")
-                if len(stack) == 0:
-                    print("Stack add in 0")
+                if not stack:
                     stack.append(i)
                 else:
                     max_len = max(max_len, i - stack[-1])
