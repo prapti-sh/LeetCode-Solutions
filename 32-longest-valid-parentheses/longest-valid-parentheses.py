@@ -8,7 +8,6 @@ class Solution(object):
         max_len = 0
 
         for i in range(len(s)):
-            print(i)
             if s[i] == "(":
                 stack.append(i)
             else:
