@@ -27,6 +27,9 @@ class Solution(object):
                 vowelCount += -1
             maxVowel = max(vowelCount, maxVowel)
 
+            if maxVowel == k:
+                return k
+
         return maxVowel
             
 
