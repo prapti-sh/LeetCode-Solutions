@@ -7,7 +7,6 @@ class Solution(object):
         pivot = -1
         right = sum(nums) 
         left = 0
-        print(right)
 
         if left == right - nums[0]:
             return 0
@@ -20,7 +19,7 @@ class Solution(object):
                 right = right - nums[i]
             else:
                 right = 0
-            print(right, left)
+
             if left == right:
                 return i
         return -1
